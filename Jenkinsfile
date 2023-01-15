@@ -21,10 +21,10 @@ node('') {
 	
 	stage('Docker Build'){
         sh ' docker --version '
-        sh ' docker build . '
+        sh ' docker build -t mavenbuild . '
     }
     stage('Create Container '){
-        sh ' docker run -d -p 9000:8080  --name dockercontainer11 . '
+        sh ' docker run -d -p 9000:8080  --name dockercontainer1 mavenbuild'
     }
 	
 	
