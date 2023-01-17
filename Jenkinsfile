@@ -20,7 +20,7 @@ node{
  
 
     stage ('Sonar Analysis'){
- 	sh 'mvn sonar:sonar -Dsonar.host.url=http://52.242.130.228:9000/ -Dsonar.login=c3c8ae7444bed76a466fd925fb71de1f6a6eafff'
+ //	sh 'mvn sonar:sonar -Dsonar.host.url=http://52.242.130.228:9000/ -Dsonar.login=c3c8ae7444bed76a466fd925fb71de1f6a6eafff'
     }
 
  
