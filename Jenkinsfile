@@ -12,11 +12,11 @@ node('') {
 	}
 
 	stage ('Sonar Analysis'){
-		// sh 'mvn sonar:sonar -Dsonar.host.url=http://20.29.72.44:9000/ -Dsonar.login=d785e2e435133fac3642b3aed4e5323188cfdd80'
+		 sh 'mvn sonar:sonar -Dsonar.host.url=http://52.242.130.228:9000/ -Dsonar.login=c3c8ae7444bed76a466fd925fb71de1f6a6eafff'
 	}
 
 	stage ('Archive Artifacts'){
-		archiveArtifacts artifacts: 'target/*.war'
+		// archiveArtifacts artifacts: 'target/*.war'
 	}
 	
 	stage('Docker Build'){
