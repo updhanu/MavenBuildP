@@ -57,8 +57,8 @@ node{
 
     stage ('Notification'){
         emailext (
-              subject: "Job Completed",
-              body: "Jenkins Pipeline Job for Maven Build got completed macha",
+              subject: "Job Completed!",
+              body: "Jenkins Pipeline Job for Maven Build got completed.",
               to: "itsmedhanu2k01@gmail.com"
             )
     }
