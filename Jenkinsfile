@@ -59,7 +59,7 @@ node{
         emailext (
               subject: "Job  Completed!",
               body: "Jenkins Pipeline Job for Maven Build got completed.",
-              to: "itsmedhanu2k01@gmail.com"
+              to: "itsmedhanu2k01@gmail.com "
             )
     }
 
